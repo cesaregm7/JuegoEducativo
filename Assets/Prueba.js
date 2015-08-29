@@ -9,7 +9,7 @@ var codigoIngresado : String;
 function Start () {
 	num = 1;
 	textoAp.text = "...";
-	textoMa.text = "Escucha enclenque, si quieres sobrevivir en una batalla debes pensar rápido. Un error podría resultar en tu muerte. Empecemos con la práctica!";
+	textoMa.text = "Escucha enclenque, si quieres sobrevivir en una batalla debes pensar rápido. Un error podría resultar en tu muerte. Empecemos con la práctica! hehehehe";
 }
 
 function Update () {
