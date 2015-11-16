@@ -456,23 +456,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 298898957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2884cabddb8b9478e1be0d0d15624f, type: 3}
+  m_Script: {fileID: 11500000, guid: d6cb8aeefc2ad9840a533f5145bd337d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codigo: {fileID: 0}
-  textoAp: {fileID: 0}
-  textoMa: {fileID: 0}
-  textoIn: {fileID: 0}
-  num: 0
-  codigoIngresado: 
   button: {fileID: 385345396}
   anim: {fileID: 298898959}
-  tomar_espada: 0
-  atacar: 0
-  defensa_espada: 0
   va_atacar: 0
   ataca_maestro: 0
   ya_se_va: 0
+  num: 0
 --- !u!1 &310480184
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,16 +739,12 @@ MonoBehaviour:
   textoAp: {fileID: 1426755553}
   textoMa: {fileID: 1060308084}
   textoIn: {fileID: 1575724939}
-  num: 0
   codigoIngresado: 
   button: {fileID: 385345396}
   anim: {fileID: 435174145}
   tomar_espada: 0
   atacar: 0
   defensa_espada: 0
-  va_atacar: 0
-  ataca_maestro: 0
-  ya_se_va: 0
 --- !u!114 &385345396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,16 +966,12 @@ MonoBehaviour:
   textoAp: {fileID: 0}
   textoMa: {fileID: 0}
   textoIn: {fileID: 0}
-  num: 0
   codigoIngresado: 
   button: {fileID: 385345396}
   anim: {fileID: 435174145}
   tomar_espada: 0
   atacar: 0
   defensa_espada: 0
-  va_atacar: 0
-  ataca_maestro: 0
-  ya_se_va: 0
 --- !u!1 &437986557
 GameObject:
   m_ObjectHideFlags: 0

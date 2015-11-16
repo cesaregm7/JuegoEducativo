@@ -43,5 +43,5 @@ function Update () {
 }
 
 function OnClick(){
-	D
+
 }
