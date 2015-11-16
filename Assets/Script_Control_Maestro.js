@@ -40,9 +40,10 @@ function Update () {
 			break;
 		case 5:
 			veces++;
-			va_atacar = true;
+			//va_atacar = true;
+			cubrirse();
 			if (veces == 1){
-				healthSlider.value = healthSlider.value - 5;
+				bajarVida();
 			}
 			break;
 		case 6:
@@ -55,6 +56,15 @@ function Update () {
 			ya_se_va = true;
 			break;
 	}
+}
+
+function bajarVida(){
+	yield WaitForSeconds(2);
+	healthSlider.value = healthSlider.value - 5;
+}
+function cubrirse(){
+	yield WaitForSeconds(0.5);
+	va_atacar = true;
 }
 
 function OnClick(){

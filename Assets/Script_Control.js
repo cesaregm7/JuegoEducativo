@@ -81,7 +81,7 @@ function OnClick(){
 				textoMa.text = "En el futuro necesitaras un escudo para defenderte. Un combate real será más difícil que esto, porque debes actuar según las acciones del enemigo.";
 				codigo.text = "";
 				textoIn.text ="";
-				healthSlider.value = healthSlider.value - 50;
+				bajarVida();
 			}
 			else{
 				textoMa.text = "Estas mal! Concentrate!";
@@ -98,4 +98,8 @@ function OnClick(){
 			textoMa.text = "¿Qué esas cosas no se cansan? Tu quédate aquí, tengo una nacion que defender.";
 			break;
 	}
+}
+function bajarVida(){
+	yield WaitForSeconds(1);
+	healthSlider.value = healthSlider.value - 50;
 }
