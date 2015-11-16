@@ -33,6 +33,7 @@ function Update () {
 			break;
 		case 6:
 			ataca_maestro = true;
+			va_atacar = false;
 			break;
 		case 7:
 			break;
