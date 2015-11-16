@@ -14,6 +14,9 @@ var tomar_espada : boolean;
 var atacar : boolean;
 var defensa_espada : boolean;
 
+//para la vida
+var healthSlider : UnityEngine.UI.Slider;
+
 function Start () {
 	num = 1;
 	textoAp.text = "...";
@@ -22,6 +25,9 @@ function Start () {
 	tomar_espada = false;
 	atacar = false;
 	defensa_espada = false;
+	healthSlider.maxValue = 100;
+	healthSlider.minValue = 0;	
+	healthSlider.value = 100;
 }
 
 function Update () {
@@ -75,6 +81,7 @@ function OnClick(){
 				textoMa.text = "En el futuro necesitaras un escudo para defenderte. Un combate real será más difícil que esto, porque debes actuar según las acciones del enemigo.";
 				codigo.text = "";
 				textoIn.text ="";
+				healthSlider.value = healthSlider.value - 50;
 			}
 			else{
 				textoMa.text = "Estas mal! Concentrate!";

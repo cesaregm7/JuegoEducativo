@@ -9,11 +9,21 @@ var ataca_maestro : boolean;
 var ya_se_va : boolean;
 var num : int;
 
+//para la vida
+var healthSlider : UnityEngine.UI.Slider;
+var backHealth : int;
+var veces : int;
+
 function Start () {
 	num = Script_Control.num;
 	va_atacar = false;
 	ataca_maestro = false;
 	ya_se_va = false;
+	healthSlider.maxValue = 100;
+	healthSlider.minValue = 0;	
+	healthSlider.value = 100;
+	backHealth = healthSlider.value;
+	veces = 0;
 }
 
 function Update () {
@@ -29,7 +39,11 @@ function Update () {
 		case 4:
 			break;
 		case 5:
+			veces++;
 			va_atacar = true;
+			if (veces == 1){
+				healthSlider.value = healthSlider.value - 5;
+			}
 			break;
 		case 6:
 			ataca_maestro = true;
