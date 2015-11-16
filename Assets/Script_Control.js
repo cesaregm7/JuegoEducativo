@@ -4,7 +4,7 @@ var codigo : UnityEngine.UI.InputField;
 var textoAp : UnityEngine.UI.Text;
 var textoMa : UnityEngine.UI.Text;
 var textoIn : UnityEngine.UI.Text;
-var num : int;
+static var num : int = 1;
 var codigoIngresado : String;
 
 var button: UnityEngine.UI.Button;
@@ -25,8 +25,8 @@ function Start () {
 }
 
 function Update () {
-	anim.SetBool("tomar_espada", tomar_espada);
 	anim.SetBool("atacar", atacar);
+	anim.SetBool("tomar_espada", tomar_espada);
 	anim.SetBool("defensa_espada", defensa_espada);
 }
 
@@ -71,6 +71,7 @@ function OnClick(){
 			codigoIngresado = codigo.text;
 			if (codigoIngresado.Equals("print "+'"'+"Defender con espada"+'"'+"")){
 				defensa_espada = true;
+				atacar = false;
 				textoMa.text = "En el futuro necesitaras un escudo para defenderte. Un combate real será más difícil que esto, porque debes actuar según las acciones del enemigo.";
 				codigo.text = "";
 				textoIn.text ="";

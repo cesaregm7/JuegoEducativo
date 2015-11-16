@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Prueba.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script_Control.js">
     <Files>
-      <File FileName="Assets\Prueba.js" Line="12" Column="21" />
+      <File FileName="Assets\Script_Control.js" Line="33" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-UnityScript" expanded="True">
-            <Node name="Prueba.js" selected="True" />
+            <Node name="Script_Control.js" selected="True" />
           </Node>
         </State>
       </Pad>
